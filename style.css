@@ -43,3 +43,7 @@ img:hover{
 
 .invent-height{
    height: 100px};
+
+.store-height{
+     min-height: 25vh;
+}

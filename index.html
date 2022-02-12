@@ -27,8 +27,12 @@
                                 <li class="list-group-item">
                                     <h1>Stats</h1>
                                 </li>
-                                <li class="list-group-item">cheese per second:</li>
-                                <li class="list-group-item">Total Cheese:<span id="cheese-count"> 0 </span></li>
+                                <li class="list-group-item">
+                                    <h3>CPS:</h3>
+                                </li>
+                                <li class="list-group-item">
+                                    <h3>Total Cheese: <span id="cheese-count"></span></h3>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -42,27 +46,31 @@
                                     <button class="btn btn-dark" onclick="buyClick('knives')">
                                         <h3> Knife</h3>
                                     </button>
-                                    Cost <span id="knife-cost"></span>
+                                    <b> Cost <span id="knife-cost"></span></b>
+                                    <b> Multiplier x <span id="knife-multi"></span> </b>
                                 </li>
 
                                 <li class="list-group-item">
                                     <button class="brn btn-dark" onclick="buyClick('pickaxes')">
                                         <h3>Pick axe</h3>
                                     </button>
-                                    Cost <span id="axe-cost"></span>
+                                    <b> Cost <span id="axe-cost"></span></b>
+                                    <b> Multiplier x <span id="axe-multi"></span></b>
                                 </li>
                                 <li class="list-group-item">
                                     <button class="brn btn-dark" onclick="buyAuto('carts')">
                                         <h3>Cart</h3>
                                     </button>
-                                    Cost <span id="cart-cost"></span>
+                                    <b>Cost <span id="cart-cost"></span></b>
+                                    <b> Multiplier x <span id="cart-multi"></span></b>
                                 </li>
 
                                 <li class="list-group-item invent-height">
                                     <button class="btn btn-dark" onclick="buyAuto('rovers')">
                                         <h3> Rover</h3>
                                     </button>
-                                    Cost <span id="rover-cost"></span>
+                                    <b> Cost <span id="rover-cost"></span></b>
+                                    <b> Multiplier x <span id="rover-multi"></span></b>
                                 </li>
                             </ul>
                         </div>
@@ -83,10 +91,18 @@
                                 <li class="list-group-item">
                                     <h1>Inventory</h1>
                                 </li>
-                                <li class="list-group-item">Cheese Knives: <span id="knife-count">0</span></li>
-                                <li class="list-group-item">Pick Axes: <span id="pick-count">0</span></li>
-                                <li class="list-group-item">Cheese Carts: <span id="cart-count">0</span></li>
-                                <li class="list-group-item">Cheese Rovers: <span id="rover-count">0</span></li>
+                                <li class="list-group-item">
+                                    <h6>Cheese Knives: <span id="knife-count">0</span></h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Pick Axes: <span id="pick-count">0</span></h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Cheese Carts: <span id="cart-count">0</span></h6>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>Cheese Rovers: <span id="rover-count">0</span></h6>
+                                </li>
                             </ul>
                         </div>
                     </div>

@@ -13,12 +13,12 @@ let clickUpgrades = {
 
 let automaticUpgrades = {
     rovers: {
-        price: 2000,
+        price: 5000,
         quantity: 0,
         multiplier: 40
     },
     carts: {
-        price: 5000,
+        price: 1000,
         quantity: 0,
         multiplier: 20
     }
@@ -56,6 +56,19 @@ function draw() {
 
     let roverCost = document.getElementById('rover-cost')
     roverCost.innerText = automaticUpgrades.rovers.price
+
+    // this is your multiplier //
+    let knifeMulti = document.getElementById('knife-multi')
+    knifeMulti.innerText = clickUpgrades.knives.multiplier
+
+    let axeMulti = document.getElementById('axe-multi')
+    axeMulti.innerText = clickUpgrades.pickaxes.multiplier
+
+    let cartMulti = document.getElementById('cart-multi')
+    cartMulti.innerText = automaticUpgrades.carts.multiplier
+
+    let roverMulti = document.getElementById('rover-multi')
+    roverMulti.innerText = automaticUpgrades.rovers.multiplier
 }
 
 // click upgrades logic //
