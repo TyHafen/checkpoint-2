@@ -1,6 +1,26 @@
 body{
-    background-color: grey;
+   background-image: url(https://i.pinimg.com/originals/e1/13/9e/e1139e26555d9325b5df67c5efa72912.jpg);
+ background-size: cover;
+   background-position: center;
+   height:100vh;
+
 }
-.card{
-    border-radius: 5px;
+.title-cheese{
+    font-size: 6rem;
+ text-shadow:0 0 10px rgba(8, 8, 8, 0.877);
+ transform: translateY();
+ font-weight: 1400;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.img-size{
+    height: 30vh;
+    width: 35vh ;
+    transform: translateX(50%);
+
+
+}
+
+.transparent{
+    background-color: rgba(240, 255, 255, 0.692);
 }
