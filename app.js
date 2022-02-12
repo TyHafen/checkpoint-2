@@ -15,7 +15,7 @@ let automaticUpgrades = {
     rovers: {
         price: 5,
         quantity: 0,
-        multiplier: 20
+        multiplier: 40
     },
     carts: {
         price: 2,
