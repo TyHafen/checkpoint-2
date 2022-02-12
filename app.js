@@ -1,11 +1,11 @@
 let clickUpgrades = {
     pickaxes: {
-        price: 4,
+        price: 1000,
         quantity: 0,
-        multiplier: 1
+        multiplier: 6
     },
     knives: {
-        price: 2,
+        price: 100,
         quantity: 0,
         multiplier: 2
     }
@@ -13,12 +13,12 @@ let clickUpgrades = {
 
 let automaticUpgrades = {
     rovers: {
-        price: 5,
+        price: 2000,
         quantity: 0,
         multiplier: 40
     },
     carts: {
-        price: 2,
+        price: 5000,
         quantity: 0,
         multiplier: 20
     }
@@ -88,6 +88,7 @@ function clickAdd() {
 //  auto upgrade adds to interval at bottom of JS //
 function autoAdd() {
     for (let key in automaticUpgrades) {
+
         let autoAdd = automaticUpgrades[key]
         cheeseCount += (autoAdd.multiplier * autoAdd.quantity)
     }
