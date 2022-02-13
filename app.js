@@ -18,18 +18,24 @@ let automaticUpgrades = {
         multiplier: 40
     },
     carts: {
-        price: 1000,
+        price: 10,
         quantity: 0,
         multiplier: 20
     }
 };
 let cheeseCount = 0
+let cps = 0
+
 
 function draw() {
 
-    //  cheese count update //
+    //  cheese count update  and CPS//
     let cheeseCountElem = document.getElementById('cheese-count')
     cheeseCountElem.innerText = cheeseCount
+    let cpsElem = document.getElementById('cps')
+    cpsElem.innerText = cps
+
+
 
     // this is your inventory //
     let knifeElem = document.getElementById('knife-count')
@@ -116,4 +122,6 @@ function mine() {
     draw()
 }
 
+
 let autoInterval = setInterval(autoAdd, 3000)
+
