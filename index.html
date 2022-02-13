@@ -18,68 +18,74 @@
     </header>
 
     <main class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 d-flex ">
-                <div class="row">
-                    <div class="col-12 col-md-6 ">
-                        <div class="card" style="width: 18rem;">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h1>Stats</h1>
-                                </li>
-                                <li class="list-group-item">
-                                    <h3>CPS:</h3>
-                                </li>
-                                <li class="list-group-item">
-                                    <h3>Total Cheese: <span id="cheese-count"></span></h3>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 ">
-                        <div class="card" style="width: 18rem;">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h1>Store</h1>
-                                </li>
-                                <li class="list-group-item">
-                                    <button class="btn btn-dark" onclick="buyClick('knives')">
-                                        <h3> Knife</h3>
-                                    </button>
-                                    <b> Cost <span id="knife-cost"></span></b>
-                                    <b> Multiplier x <span id="knife-multi"></span> </b>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <button class="brn btn-dark" onclick="buyClick('pickaxes')">
-                                        <h3>Pick axe</h3>
-                                    </button>
-                                    <b> Cost <span id="axe-cost"></span></b>
-                                    <b> Multiplier x <span id="axe-multi"></span></b>
-                                </li>
-                                <li class="list-group-item">
-                                    <button class="brn btn-dark" onclick="buyAuto('carts')">
-                                        <h3>Cart</h3>
-                                    </button>
-                                    <b>Cost <span id="cart-cost"></span></b>
-                                    <b> Multiplier x <span id="cart-multi"></span></b>
-                                </li>
-
-                                <li class="list-group-item invent-height">
-                                    <button class="btn btn-dark" onclick="buyAuto('rovers')">
-                                        <h3> Rover</h3>
-                                    </button>
-                                    <b> Cost <span id="rover-cost"></span></b>
-                                    <b> Multiplier x <span id="rover-multi"></span></b>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-6 d-flex justify-content-around height">
+                <div class="card" style="width: 40vh; height: 10vh;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h1>Stats</h1>
+                        </li>
+                        <li class="list-group-item">
+                            <h3>CPS:</h3>
+                        </li>
+                        <li class="list-group-item">
+                            <h3>Total Cheese: <span id="cheese-count"></span></h3>
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="card" style="width: 35vh;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h1>Store</h1>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="btn btn-dark" onclick="buyClick('knives')">
+                                <h3> Knife</h3>
+                            </button>
+                            <div>
+                                Cost <span id="knife-cost"></span>
+                                Multiplier x <span id="knife-multi"></span>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <button class="brn btn-dark" onclick="buyClick('pickaxes')">
+                                <h3>Pick axe</h3>
+                            </button>
+                            <div>
+                                Cost <span id="axe-cost"></span>
+                                Multiplier x <span id="axe-multi"></span>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="brn btn-dark" onclick="buyAuto('carts')">
+                                <h3>Cart</h3>
+                            </button>
+                            <div>
+                                Cost <span id="cart-cost"></span>
+                                Multiplier x <span id="cart-multi"></span>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item ">
+                            <button class="btn btn-dark align-content-center d-flex" onclick="buyAuto('rovers')">
+                                <h3> Rover</h3>
+                            </button>
+                            <div class="">
+                                Cost <span id="rover-cost"></span>
+                                Multiplier x <span id="rover-multi"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
             </div>
+
             <div class="col-12 col-md-6 d-flex p-0 justify-content-between">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 d-flex">
+                    <div class="col-12 col-md-6 ">
                         <img class="img-fluid img-size" onclick="mine(); "
                             src="https://th.bing.com/th/id/R.2321e8ebf4b1cfdd58f683704481a610?rik=Gu9mEOkDhGL7DQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fmoon-transparent-background%2fmoon-transparent-background-2.png&ehk=u3EDfNDLJb0eCuD6x2jAqixtQdeoQ34pVKnvZRBhLhg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
                             alt="moon">
