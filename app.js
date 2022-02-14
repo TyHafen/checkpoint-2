@@ -18,7 +18,7 @@ let automaticUpgrades = {
         multiplier: 40
     },
     carts: {
-        price: 10,
+        price: 2000,
         quantity: 0,
         multiplier: 20
     }
@@ -34,7 +34,6 @@ function draw() {
     cheeseCountElem.innerText = cheeseCount
     let cpsElem = document.getElementById('cps')
     cpsElem.innerText = cps
-
 
 
     // this is your inventory //
