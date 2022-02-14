@@ -109,8 +109,9 @@ function autoAdd() {
 
         let autoAdd = automaticUpgrades[key]
         cheeseCount += (autoAdd.multiplier * autoAdd.quantity)
-        cps = Math.round(((autoAdd.multiplier * autoAdd.quantity) / 3))
     }
+    cps = Math.round((((automaticUpgrades.carts.multiplier * automaticUpgrades.carts.quantity) + (automaticUpgrades.rovers.multiplier * automaticUpgrades.rovers.quantity)) / 3))
+
     draw()
 }
 
